@@ -7,13 +7,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         /**
-         * lista de productos en stock, cambio de array list a collections para evitar usar tantos add
+         * lista de productos en stock, cambio de array list a collections para evitar usar tantos add,
+         * Lanmda no me funciono
          */
         List<ProductoElectronico> productos = new ArrayList<>();
         Collections.addAll(productos,
                 new Telefono("Motorola g90", 70000.0, "Motorola", 128),
                 new Telefono("LG flex", 80000.0, "LG", 64),
-                new Laptop("Eliteboo HP", 250000.0, "HP", "Intel i7", 16),
+                new Notebook("Elitebook HP", 250000.0, "HP", "Intel i7", 16),
                 new Television("Samsung Smart", 350000.0, "Samsung", 55),
                 new Television("Noblex Android", 150000.0, "Noblex", 55)
         );
@@ -25,7 +26,7 @@ public class Main {
 
         boolean continuarComprando = true;
 
-        System.out.println("\n** Bienvenido a TechLnd!!**\n");
+        System.out.println("\n** Bienvenido a TechLnd!!*11*\n");
 
         while (continuarComprando) {
             String menu =

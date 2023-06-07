@@ -14,4 +14,12 @@ class Television extends ProductoElectronico {
     public double calcularPrecioFinal() {
         return precioBase * 1.15; //
     }
+    @Override
+    public String mostrarInformacion() {
+
+        return super.mostrarInformacion() +
+
+                ", Tamaño: " + getTamanoPantalla() + " Pulgadas. ";
+    }
+
 }

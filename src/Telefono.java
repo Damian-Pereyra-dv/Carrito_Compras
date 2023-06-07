@@ -14,4 +14,12 @@ class Telefono extends ProductoElectronico {
     public double calcularPrecioFinal() {
         return precioBase * 1.1; // 10% de impuestos
     }
+    @Override
+    public String mostrarInformacion() {
+
+        return super.mostrarInformacion() +
+
+                ", Almacenamiento: " + getCapacidadAlmacenamiento() + " GB";
+    }
+
 }
